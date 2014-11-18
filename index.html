@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+  <title>Shopping</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/meyer-reset.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="libs/json-to-table.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Fruktfantasten</h1>
+    
+    <section class="show-hide-shopping-cart">
+      <button class="show-cart">Visa kundvagnen</button>
+      <button class="hide-cart">Dölj kundvagnen</button>
+    </section>
+    <section class="shopping-cart">
+      <div class="cart-column-names">
+        <span class="remove"></span><span class="name">Product</span><span class="price">Pris</span><span class="amount">Antal</span><span class="summa">Summa</span>
+      </div>
+    </section>
+  </header>
+  
+  <main>
+    <section class="category-listing">Produktkategorier:&nbsp;&nbsp;</section>
+    <section class="product-listing">
+       <h2>Våra produkter</h2>
+       <article class="product-column-names">
+
+          <span class="p-name">
+            Name
+            <i class="fa fa-chevron-up name-desc"></i>
+            <i class="fa fa-chevron-down name"></i>
+          </span>
+        
+          <span class="p-price">
+            Price
+            <i class="fa fa-chevron-up price-desc"></i>
+            <i class="fa fa-chevron-down price"></i>
+          </span>
+       
+       </article>
+
+    </section>
+    <section class ="formsect">
+      <form class="customerInfo">
+        <section class="userNotify">
+          <div class="userSuccess">You successfully registered!</div>
+          <div class="userError">Something went wrong, try again!</div>
+        </section>
+        <label for="förnamn" type="text">Enter your first name</label>
+        <input type="text" name="förnamn" required></input>
+        <label for="efternamn" type="text">Enter your last name</label>
+        <input type="text" name="efternamn" required></input>
+        <label for="email" type="text">Enter your email (this will be your user name)</label>
+        <input type="text" name="email" placeholder="something@email.com" required></input>
+        <label type="text" name="password">Enter your password:</label>
+        <input type="password" name="password" required>
+        <input type="submit" value="Submit">
+      </form>
+    <section class="productsToBuy">
+      <button class="cancelCheckout">Avbryt</button>
+    </section>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Adressinfo...</p>
+  </footer>
+
+</body>
+</html>

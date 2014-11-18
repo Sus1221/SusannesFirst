@@ -1,0 +1,187 @@
+body {
+  font-family:Verdana, sans-serif;
+  font-size:14px;
+}
+
+/* 
+  Hello Microsoft! 
+  It would be nice if you would
+  default the main element to block.
+  Since you don't we do!
+*/
+main {
+  display:block;
+}
+
+header {
+  background-color:#9aa;
+  border-bottom:1px solid #333;
+  padding:20px;
+}
+
+.checkout {
+  display: inline-block;
+}
+
+header h1 {
+  font-size:50px;
+}
+
+footer {
+  margin-top:50px;
+  background-color:#000;
+  color:#fff;
+  padding:20px;
+}
+
+.product-listing {
+  margin:30px;
+}
+
+.product-listing h2 {
+  font-size:30px;
+  margin-bottom:10px;
+}
+
+.product-listing article {
+  padding:10px;
+  background-color:#aca;
+}
+
+.product-listing article:nth-child(odd){
+  background-color:#aac;
+}
+
+.product-listing article span {
+  display:inline-block;
+  width:200px;
+}
+
+.p-price {
+  text-align:right;
+}
+
+.p-description {
+  margin:20px;
+  padding:20px;
+  background-color:#ffe;
+  display:none;
+}
+
+article:hover .p-description {
+  display:block;
+}
+
+.product-column-names {
+  background-color:#333 !important;
+  color:#fff;
+}
+
+.product-column-names span {
+  cursor:pointer;
+}
+
+.product-column-names i {
+  margin-left:10px;
+}
+
+
+input[type="radio"]:not(:first-child) {
+  display:inline-block;
+  margin-left:20px;
+}
+
+.buy {
+  padding-left:50px;
+}
+
+.buy button {
+  cursor:pointer;
+}
+
+.shopping-cart {
+  background-color:#fff;
+  position:fixed;
+  right:20px;
+  top:40px;
+  padding:20px;
+  border:1px solid #000;
+  font-size:10px;
+}
+
+
+.shopping-cart span {
+  display:inline-block;
+  width:50px;
+  text-align:right;
+  padding:3px;
+}
+
+.shopping-cart .name {
+  text-align:left;
+  width:100px;
+}
+
+.cart-column-names {
+  font-weight:bold;
+}
+
+.shopping-cart .remove {
+  width:10px;
+  cursor:pointer;
+}
+
+.sum {
+  padding-top:5px;
+  margin-top:5px;
+  border-top:1px solid #000;
+  text-align:right;
+}
+
+.category-listing {
+  margin-top:5px;
+  margin-left:30px;
+}
+
+.show-hide-shopping-cart {
+  position:fixed;
+  right:20px;
+  top:20px;
+}
+
+.formsect {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  background-color: #ffffb2;
+  z-index: 10;
+  margin: 20px;
+  padding: 30px;
+  border: 2px solid black;
+}
+
+.customerInfo {
+  width: 30%;
+  display: inline-block;
+}
+
+.customerInfo input {
+  display: block;
+  margin-bottom: 10px;
+}
+.userNotify div {
+  display: none;
+}
+
+.userNotify .userSuccess {
+  background-color: green;
+  padding: 5px;
+}
+
+.userNotify .userError {
+  background-color: red;
+  padding: 5px;
+}
