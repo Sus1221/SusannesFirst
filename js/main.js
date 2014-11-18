@@ -104,7 +104,7 @@ $(function(){
       article.append('<span class="p-price">' + products[i].price + '</span>');
 
       // Add a buy button
-      var buyButton = $('<button>Köp</button>');
+      var buyButton = $('<button class="buybut">Köp</button>');
       var spanForBuyButton = $('<span class="buy"/>');
       spanForBuyButton.append(buyButton);
       article.append(spanForBuyButton);
@@ -112,10 +112,16 @@ $(function(){
       // Let the buy button remember its products
       // Read more: http://api.jquery.com/data/
       buyButton.data("product",products[i]);
+
+
       
-      article.append(
-        '<div class="p-description">' + products[i].description + '</div>'
-      );
+      article.append('<div class="p-description">' + products[i].description + '</div>');
+
+      $('.p-description').hide();
+      article.append('<button class="showDescription">Show description</button>');
+      $('.showDescription').click(function(){
+        $('.p-description').show();
+      });
 
       // add the article to the product-listing element
       $('.product-listing').append(article);
