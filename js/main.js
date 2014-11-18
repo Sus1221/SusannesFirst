@@ -117,12 +117,20 @@ $(function(){
       
       article.append('<div class="p-description">' + products[i].description + '</div>');
 
-      $('.p-description').hide();
-      article.append('<button class="showDescription">Show description</button>');
+      
+      article.append('<button val="it" class="showDescription">Show description</button>');
       $('.showDescription').click(function(){
-        $('.p-description').show();
+        $('.p-description').show(this);
       });
-
+          if($('.p-description').show()){
+       
+            article.append('<button class="hideDescription">Hide description</button>');
+              $('.hideDescription').click(function(){
+              $('.p-description').hide();
+              
+          });
+              $('.p-description').hide();
+            }
       // add the article to the product-listing element
       $('.product-listing').append(article);
     }
