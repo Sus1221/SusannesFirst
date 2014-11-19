@@ -172,7 +172,7 @@ input[type="radio"]:not(:first-child) {
   background-color: #ffffb2;
   z-index: 10;
   margin: 20px;
-  padding: 30px;
+  padding: 25px;
   border: 2px solid black;
 }
 
