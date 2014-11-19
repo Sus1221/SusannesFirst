@@ -116,24 +116,28 @@ $(function(){
 
       
       article.append('<div class="p-description">' + products[i].description + '</div>');
-
+      article.find('.p-description').hide();
       
-      article.append('<button val="it" class="showDescription">Show description</button>');
-      $('.showDescription').click(function(){
-        $('.p-description').show(this);
-      });
-          if($('.p-description').show()){
-       
-            article.append('<button class="hideDescription">Hide description</button>');
-              $('.hideDescription').click(function(){
-              $('.p-description').hide();
-              
-          });
-              $('.p-description').hide();
-            }
+      article.append('<button class="showDescription">Show description</button>');
+      article.append('<button class="hideDescription">Hide description</button>');
+      article.find('.hideDescription').hide();
+      console.log("hideDescription: ", article.find('.hideDescription'));
+      
       // add the article to the product-listing element
       $('.product-listing').append(article);
     }
+
+    $('.showDescription').click(function(){
+      $(this).siblings('.p-description').show(800);
+      $(this).siblings('.hideDescription').show();
+      $(this).hide();
+    });
+
+    $('.hideDescription').click(function(){
+      $(this).siblings('.p-description').hide(800);
+      $(this).siblings('.showDescription').show();
+      $(this).hide();
+    });
 
     // Add the click handlers for the buy buttons
     $('.buy button').click(buyButtonHandler);
